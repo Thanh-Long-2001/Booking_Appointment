@@ -1,7 +1,5 @@
 Cài đặt môi trường phát triển: Đảm bảo máy tính của bạn chạy phiên bản Node module 14.7.0
 
-- Demo xem tại youtube
-
 - Mở xampp
 
 - Tạo CSDL tên `testdb`
@@ -17,7 +15,3 @@ Cài đặt môi trường phát triển: Đảm bảo máy tính của bạn ch
 - Quản lý tài khoản google ->bảo mật -> xác mình 2 bước -> mật khẩu ứng dụng -> đăng ký và copy thông tin email password vào file .env, để có thể sử dụng nodemailer gửi mail cho bệnh nhân đặt lịch
 
 - Run pj frontend và backend bằng câu lệnh "npm start"
-
-- localhost:8086/home - user
-
-- localhost:8086/login - admin
