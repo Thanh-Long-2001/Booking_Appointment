@@ -1,0 +1,98 @@
+.doctor-extra-info-container{
+    padding-left: 16px;
+    margin-top: 20px;
+    .content-up{
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+
+        .text-address{
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .name-clinic{
+            padding: 5px 0;
+            color: #ffe8ff;
+        }   
+
+        .detail-address{
+            color: #ffe8ff;
+            margin-bottom: 10px;
+        }
+    }
+
+    .content-down{
+        .short-info{
+            
+            display: flex;
+            
+            color: #ffe8ff !important;
+            
+
+            .currency{
+                margin: 0 5px;
+            }
+        }
+
+        .detail{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            color: #ffe8ff !important;
+            &:hover {
+                color: #27d88d !important;
+                text-decoration: underline;
+            }
+        }
+
+        .title-price{
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .detail-info{
+            border: 1px solid #ddd;
+            padding: 5px;
+            color: #fff;
+            // background-color: #f8f8f8;
+
+            .price{
+                padding-bottom: 5px;
+
+                .right{
+                    float: right;
+                }
+            }
+
+            .note{
+
+            }
+        }
+
+        .payment{
+            border: 1px solid #ddd;
+            padding: 5px;
+            color: #fff;
+
+            // background-color: #eee;
+        }
+
+        .hide-price{
+            margin-top: 10px;
+            
+            span{
+                cursor: pointer;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    color: #27d88d !important;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

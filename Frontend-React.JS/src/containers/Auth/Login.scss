@@ -1,0 +1,285 @@
+.login-background {
+    // background: rgb(34,193,195);
+    // background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,156,1) 100%);
+    background-image: url("../../assets/healhLogin.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+    .login-container {
+        background-color: white;
+        width: 350px;
+        height: 400px;
+        margin: auto;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        .login-content {
+            padding: 12px 30px;
+
+            .text-login {
+                font-weight: 600;
+                padding-top: 10px;
+                font-size: 26px;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+
+            .login-input {
+                margin: 16px 0 8px 0;
+
+                .custom-input-password {
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        right: 8px;
+                        top: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .btn-login {
+                width: 100%;
+                margin: 24px 0 16px 0;
+                height: 42px;
+                border-radius: 15px;
+                color: white;
+                outline: none;
+                border: none;
+                background: blue;
+            }
+
+            .border-new {
+                display: flex;
+                justify-content: center;
+                
+            }
+
+            .text-center {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .border-line-text {
+                height: 1px;
+                width: 180px;
+                border-top: 1px solid #ccc;
+            }
+
+            .let-signup {
+                color: blue;
+                margin-left: 5px;
+            }
+
+            .let-signup:hover {
+                cursor: pointer;
+            }
+
+            .forgot-password {
+                font-size: 12px;
+            }
+
+            .social-login {
+                
+                
+                display: flex;
+                text-align: center;
+                justify-content: flex-end;
+                margin-top: 10px;
+                padding: 0 -15px;
+
+                .google {
+                    font-size: 30px;
+                    background-color: #ece4e4;
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 50px;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    display: flex;
+                    margin-right: 10px;
+                }
+
+                .containerGG {
+                    // font-size: 30px;
+                    background-color: white;
+                    position: relative;
+                    margin: 0 auto;
+                    height: 40px;
+                    width: 500px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: flex-start;
+                    border: 1px solid #ccc;
+                    border-radius: 15px;
+
+                    .logo {
+                        position: relative;
+                        width:35px;
+                        height:35px;
+                        border-radius: 50%;
+                        left: 20px;
+                        
+                        overflow: hidden;
+                        
+                        box-shadow: 0 0px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+                    }
+                    
+                    .logo::after {
+                        content: '';
+                        display: block;
+                        width: 60%;
+                        height: 60%;
+                        border-radius: 50%;
+                        background: #fff;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        z-index: 4;
+                    }
+                    
+                    .logo::before {
+                        content: '';
+                        display: block;
+                        width: 35%;
+                        height: 32%;
+                        background: #fff;
+                        position: absolute;
+                        right: 0;
+                        bottom: 50%;
+                        transform: rotateZ(45deg);
+                        -webkit-transform: rotateZ(45deg);
+                        z-index: 10;
+                    }
+
+                    
+                    
+                    .g-line,
+                    .yellow,
+                    .green,
+                    .blue,
+                    .red {
+                        position: absolute;
+                        z-index: 2;
+                    }
+                    
+                    .g-line {
+                        width: 50%;
+                        height: 20%;
+                        background: #0091ea;
+                        right: 0;
+                        margin: auto;
+                        border-bottom-right-radius: 4px 20px;
+                        top: 0;
+                        bottom: 0;
+                        z-index: 15;
+                    }
+                    
+                    .yellow {
+                        width: 40%;
+                        height: 100%;
+                        left: -15%;
+                        bottom: 32%;
+                        background: #ffc107;
+                        transform: rotateZ(-48deg);
+                        -webkit-transform: rotateZ(-19deg);
+                        z-index: 3;
+                    }
+                    
+                    .green {
+                        width: 94%;
+                        height: 50%;
+                        left: -20%;
+                        bottom: 0;
+                        border-radius: 0 0 100% 100%;
+                        background: #4caf50;
+                        transform: rotateZ(45deg);
+                        -webkit-transform: rotateZ(46deg);
+                    }
+                    
+                    .blue {
+                        width:88%;
+                        height: 43%;
+                        background: #0091ea;
+                        right: -35%;
+                        top: 59%;
+                        transform: rotateZ(45deg);
+                        -webkit-transform: rotateZ(60deg);
+                    }
+                    
+                    .red {
+                        width: 100%;
+                        height: 50%;
+                        top: 0;
+                        left: -15%;
+                        background: #f44336;
+                    }
+                    
+                }
+
+                .containerGG:hover {
+                    cursor: pointer;
+                }
+
+                .facebook {
+                    position: relative;
+                    left: 10px;
+                    font-size: 30px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    height: 35px;
+                    width: 35px;
+                    left: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    color: #307aff;
+                    display: flex;
+                    margin-left: 10px;
+                    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+                }
+
+                .background-socialGG span{
+                    position: relative;
+                    right: -120px;
+                    color: #948c8c;
+                }
+
+                .background-socialFB {
+                    background-color: #307aff;
+                    border-radius: 15px;
+                }
+
+                .background-socialFB i {
+                    position: relative;
+                    left: 10px;
+                }
+
+                .background-socialFB span {
+                    
+                    position: relative;
+                    left: 100px;
+                    color: #fff;
+                }
+
+                .facebook:hover {
+                    cursor: pointer;
+                }
+
+            }
+
+            
+        }
+    }
+}

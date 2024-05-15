@@ -1,0 +1,49 @@
+.user-redux-container{
+    padding: 10px;
+
+    .user-redux-body {
+        .container {
+            .add-new-user {
+                width: 160px !important;
+                height: 40px;
+                background-color: #007bff;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3px;
+                border: none;
+            }
+        }
+    }
+    .preview-img-container{
+        display: flex;
+        width: 300px;
+
+        .label-upload{
+            padding: 10px;
+            border-radius: 3px;
+            background-color: #ddd;
+            cursor: pointer;
+            height: 38px;
+
+            i{
+                margin-left: 3px;
+            }
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+
+        .preview-image{
+            height: 100px;
+            width: 120px;
+            border: 1px solid grey;
+            background: center center no-repeat;
+            background-size: cover;
+            cursor: pointer;
+            margin-left: 24px;
+        }
+    }
+}

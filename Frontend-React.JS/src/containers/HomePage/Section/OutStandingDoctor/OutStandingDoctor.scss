@@ -1,0 +1,114 @@
+.section-outstanding-doctor {
+    height: 600px;
+    .section-container3 {
+        .section-header3 {
+            margin-top: 40px;
+            margin-bottom: 70px;
+            display: flex;
+            justify-content: center;
+            .title-section3 {
+                color: #140039;
+                font-size: 30px;
+                font-weight: 800;
+            }
+        }
+        .section-body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .section-customize3 {
+                width: 300px;
+                margin: 0 20px;
+
+                &:nth-child(n+4) { /* Ẩn phần tử từ thứ 4 trở đi */
+                    display: none;
+                }
+
+                .customize-border3 {
+                    margin-left: 13px;
+                    width: 270px;
+                    height: 350px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.2), /* Bóng bên phải */
+                            0 8px 10px 0 rgba(0, 0, 0, 0.2); /* Bóng bên dưới */
+                    
+                    align-items: center;
+                    &:hover {
+                        width: 290px;
+                        height: 370px;
+                        transition: all 0.2s ease-in-out;
+                        transform-origin: center;
+                    }
+                    .bg-image3 {
+                        width: 100%;
+                        height: 250px;
+                        border-radius: 10px;
+
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        
+                        
+                       
+                    }
+
+                    .position3 {
+                        width: 230px;
+                        height: 80px;
+                        font-size: 18px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 5px;
+                        font-weight: 600;
+                        &:hover {
+                            color: #04ce78;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-footer3 {
+        margin-top: 20px;
+        width: 150px;
+        height: 40px;
+        background-color: #04ce78;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 45px;
+        margin-top: 70px;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        
+    }
+
+    
+
+    .icon-more {
+        margin-left: 5px;
+        position: relative;
+        top: 1px;
+    }
+    .position3 {
+        width: 60%;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .position3 div {
+        display: block;
+    }
+}

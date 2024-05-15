@@ -1,0 +1,72 @@
+.booking-modal-container{
+    width: 600px;
+    .booking-modal-content{
+        // height: 500px;
+        display: flex;
+        flex-direction: column;
+
+        .booking-modal-header{
+            padding-left: 10px;
+            padding-right: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                display: block;
+                background: url('../../../../assets/logoOK.png') center center no-repeat;
+                background-size: 100px;
+                
+                height: 70px;
+                width: 100px;
+                cursor: pointer;
+                margin-right: 60px;
+            }
+            
+            .right{
+                position: relative;
+                top: -15px;
+                float: right;
+                cursor: pointer;
+            }
+        }
+
+        .booking-modal-body{
+            height: 100%;
+            padding: 26px;
+
+            .row {
+                margin-top: 20px;
+
+                .reason {
+                    div {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+
+        .booking-modal-footer{
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+
+            .btn-booking-confirm{
+
+            }
+
+            .btn-booking-cancel{
+
+            }
+        }
+    }
+}
+
+div._loading_overlay_wrapper {
+    position: unset;
+
+    ._loading_overlay_overlay{
+        z-index: 80000000 !important;
+    }
+}

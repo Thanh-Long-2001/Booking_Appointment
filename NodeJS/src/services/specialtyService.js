@@ -1,0 +1,169 @@
+import _ from "lodash";
+import db from "../models/index";
+import sequelize from "sequelize";
+
+let createSpecialtyService = (data) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      if (
+        !data.name ||
+        !data.imageBase64 ||
+        !data.descriptionHTML ||
+        !data.descriptionMarkdown
+      ) {
+        resolve({
+          errCode: 1,
+          errMessage: "Missing required parameters!",
+        });
+      } else {
+        await db.Specialty.create({
+          name: data.name,
+          image: data.imageBase64,
+          image2: data.imageBase642,
+          descriptionHTML: data.descriptionHTML,
+          descriptionMarkdown: data.descriptionMarkdown,
+        });
+
+        resolve({
+          errCode: 0,
+          errMessage: "OK",
+        });
+      }
+    } catch (e) {
+      reject(e);
+    }
+  });
+};
+
+let getAllSpecialtyService = () => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      let data = await db.Specialty.findAll({});
+      if (data && data.length > 0) {
+        data.map((item) => {
+          item.image = new Buffer(item.image, "base64").toString("binary");
+          return item;
+        });
+      }
+      resolve({
+        errCode: 0,
+        errMessage: "OK",
+        data,
+      });
+    } catch (e) {
+      reject(e);
+    }
+  });
+};
+
+let getDetailSpecialtyByIdService = (inputId, location) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      if (!inputId || !location) {
+        resolve({
+          errCode: 1,
+          errMessage: "Missing required parameters!",
+        });
+      } else {
+        let data = await db.Specialty.findOne({
+          where: { id: inputId },
+          attributes: [
+            "descriptionHTML",
+            "descriptionMarkdown",
+            "name",
+            "image",
+            "image2",
+          ],
+        });
+
+        if (data && data.image) {
+          data.image = new Buffer(data.image, "base64").toString("binary");
+        }
+
+        if (data && data.image2) {
+          data.image2 = new Buffer(data.image2, "base64").toString("binary");
+        }
+
+        if (data) {
+          let doctorSpecialty = [];
+          if (location === "ALL") {
+            doctorSpecialty = await db.Doctor_Info.findAll({
+              where: { specialtyId: inputId },
+              attributes: ["doctorId", "provinceId"],
+            });
+          } else {
+            //find by location
+            doctorSpecialty = await db.Doctor_Info.findAll({
+              where: { specialtyId: inputId, provinceId: location },
+              attributes: ["doctorId", "provinceId"],
+            });
+          }
+
+          data.doctorSpecialty = doctorSpecialty;
+        } else data = {};
+
+        resolve({
+          errCode: 0,
+          errMessage: "OK",
+          data,
+        });
+      }
+    } catch (e) {
+      reject(e);
+    }
+  });
+};
+
+let getSpecialtyByNameService = (nameInput) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      if (!nameInput) {
+        resolve({
+          errCode: 1,
+          errMessage: "Missing required parameters!",
+        });
+      } else {
+        let data = await db.Specialty.findAll({
+          where: {
+            name: sequelize.where(
+              sequelize.col("name"),
+              "LIKE",
+              "%" + nameInput + "%"
+            ),
+          },
+          attributes: [
+            "descriptionHTML",
+            "descriptionMarkdown",
+            "name",
+            "image",
+            "image2",
+            "id",
+          ],
+        });
+
+        if (data && data.image) {
+          data.image = new Buffer(data.image, "base64").toString("binary");
+        }
+
+        if (data && data.image2) {
+          data.image = new Buffer(data.image2, "base64").toString("binary");
+        }
+
+        resolve({
+          errCode: 0,
+          errMessage: "OK",
+          data,
+        });
+      }
+    } catch (e) {
+      reject(e);
+    }
+  });
+};
+
+module.exports = {
+  createSpecialtyService: createSpecialtyService,
+  getAllSpecialtyService: getAllSpecialtyService,
+  getDetailSpecialtyByIdService: getDetailSpecialtyByIdService,
+  getSpecialtyByNameService: getSpecialtyByNameService,
+};

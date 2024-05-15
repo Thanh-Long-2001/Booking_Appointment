@@ -1,0 +1,103 @@
+.doctor-schedule-container{
+    height: 100%;
+    margin: 20px 20px;
+    .all-schedule{
+        select{
+            border-bottom: 1px solid #ddd;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 0;
+            color: #04ce78;
+            font-weight: 700;
+
+            
+        }
+    }
+
+    .all-available-time{
+        .text-calendar{
+            color: #fff;
+            margin: 10px 0;
+
+            span{
+                font-family: 'Times New Roman', Times, serif;
+                text-transform: uppercase;
+                margin-left: 5px;
+                font-weight: 700;
+            }
+        }
+
+        .time-content{
+            color: #fff;
+            .time-content-btns{
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+
+                button{
+                    padding: 10px 16px;
+                    border: none;
+                    outline: none;
+                    background-color: #27d88d;
+                    min-width: 140px;
+                    border-radius: 3px;
+                    font-weight: 600;
+                    color: #fff;
+
+                    &:hover{
+                        background-color: rgb(248, 248, 53);
+                        color: #22264c;
+                    }
+                }
+
+                
+
+                .btn-en{
+                    min-width: 165px;
+                }
+
+                .noactive {
+                    background-color: #ccc;
+                    &:hover {
+                        background-color: #ccc;
+                        color: #fff;
+                    }
+                }
+
+                
+
+                .no-schedule{
+                    font-style: italic;
+                    font-size: 15px;
+                    color: #fff;
+
+                }
+            }
+
+            .book-free{
+                margin-top: 16px;
+                color: #fff;
+                i {
+                    margin-left: 3px;
+                    font-size: 18px;
+                    animation: blink-animation 0.7s infinite;
+                }
+            }
+
+            @keyframes blink-animation {
+                0% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.about-company {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background: url("../../../../assets/homecompany.png") center center no-repeat;
+    background-size: 683px;
+    background-size: cover;
+    .company-left {
+        
+        margin-top: 100px;
+        margin-left:60px;
+        display: block;
+        background: url(../../../../assets/about_company.png) center center no-repeat;
+        
+        width: 570px;
+        height: 570px;
+        background-size: 683px;
+        border-radius: 23px;
+    }
+
+    .company-left::after {
+        content: "";
+        display: block;
+        background: url(../../../../assets/lost.jpg) center center no-repeat;
+        background-size: cover;
+        width: 195px;
+        height: 215px;
+        border-bottom-right-radius: 23px;
+        border-bottom-left-radius: 23px;
+        border-top-left-radius: 60px;
+
+        position: relative;
+        left: 363px;
+        top: 355px;
+    }
+
+    .company-right {
+        width: 766px;
+        height: 100%;
+
+        &.company-right div {
+            margin-left: 40px;
+            
+        }
+        .company-right-item1 {
+            margin-top: 100px;
+            font-size: 20px;
+            color: #04ce78;
+            font-weight: 600;
+        }
+        .company-right-item2 {
+            margin-top: 20px;
+            color: #22264c;
+            font-size: 40px;
+            font-weight: 600;
+            width: 500px;
+            line-height: 3.2rem;
+        }
+        .company-right-item3 {
+            margin-top: 30px;
+            color: #979494;
+            font-size: 16px;
+            width: 570px;
+        }
+        .company-right-item4 {
+            margin-top: 30px;
+            display: flex;
+            
+            width: 500px;
+            justify-content: space-between;
+            
+            .company-right-item4-left {
+                margin-left: -40px;
+                .company-right-item4-item {
+                    font-size: 25px;
+                    color: #04ce78;
+
+                    &.company-right-item4-item span {
+                        font-size: 17px;
+                        color: #22264c;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .company-right-item4-right {
+                .company-right-item4-item {
+                    font-size: 25px;
+                    color: #04ce78;
+
+                    &.company-right-item4-item span {
+                        font-size: 17px;
+                        color: #22264c;
+                        margin-left: 5px;
+
+                    }
+                }
+            }
+        }
+        .company-right-item5 {
+            margin-top: 60px;
+            .company-btn-readmore {
+                width: 150px;
+                height: 45px;
+                border: none;
+                color: #22264c;
+                font-weight: 600;
+                border-radius: 20px;
+                background: linear-gradient(180deg, rgba(39,216,141,1) 30%, rgba(228,236,255,1) 89%);
+                box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.2), /* Bóng bên phải */
+                                0 2px 2px 0 rgba(0, 0, 0, 0.2); /* Bóng bên dưới */
+            }
+        }
+    }
+}

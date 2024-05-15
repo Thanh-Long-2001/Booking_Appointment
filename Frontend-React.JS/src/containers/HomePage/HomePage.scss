@@ -1,0 +1,77 @@
+.section-share{
+    height: 460px !important;
+    &.section-specialty{
+        // background: url(../../assets/background2.png);
+        // height: 900px;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: center;
+        background: linear-gradient(8deg, #eff4f8 50%, #ccc 50%);
+    }
+
+   
+
+    &.section-medical-facility {
+        background:  linear-gradient(8deg, #ccc 50%, #eff4f8 50%);
+    }
+
+
+    .section-body{
+        
+        .section-customize{
+            height: 290px;
+            width: 200px !important;
+            background-color: #140039;
+            border-radius: 10px;
+
+            .specialty-name {
+                position: relative;
+                top: 10px;
+                left: -10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 17px;
+                font-weight: bold;
+            }
+
+            .bg-image{
+                height: 240px;
+                width: 200px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                &.section-specialty:hover{
+                    opacity: 0.5;
+                }
+
+                &.section-medical-facility{
+                    // background-image: url(../../assets/medical-facility/lo-go-viet-duc.jpg);
+                    border: 1px solid #ddd;
+                    background-size: contain !important;
+                    background-color: #fff;
+                }
+
+                &.section-outstanding-doctor{
+                    // background-image: url(../../assets/doctor/anh-dai-dien-bs.jpg);
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+                
+                &.section-handbook{
+                    background-image: url(../../assets/handbook/163557-dat-lich-cham-soc-wecare247.png);
+                }
+            }
+
+            
+        }    
+        
+        
+    }
+}
+

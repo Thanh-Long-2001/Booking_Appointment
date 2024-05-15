@@ -1,0 +1,126 @@
+.detail-handbook-container{
+    background-color: #eee;
+    
+    .desc-handbook{
+        background-color: #eee;
+        padding: 10px 350px;
+        border-top: 1px solid #ddd;
+        margin-bottom: 50px;
+        .content-handbook{
+            .content-head{
+                .name-head{
+                    padding: 30px;
+                    font-size: 20px !important;
+                    font-weight: 600 !important;
+                    text-align: center;
+                    align-items: center;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        h1,h3 {
+            font-size: 16px !important;
+            font-weight: 600 !important;
+        }
+
+        h2{
+            font-size: 16px !important;
+            font-weight: 500 !important;
+        }
+    }
+
+    .comment {
+        // margin-top: 50px;
+        width: 600px;
+        height: 70px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        .formComment {
+            width: 90%;
+            height: 100%;
+            border: none;
+            outline: none;
+            
+        }
+
+        .btn-send {
+            border: none;
+            font-size: 30px;
+            .child {
+                color: #27d88d;
+            }
+        }
+
+        
+    }
+
+    .comment-section {
+        margin: 0 auto;
+        width: 600px;
+        
+        .comment-all {
+            
+            .comment-info {
+                width: fit-content;
+                height: 50px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                display: flex;
+                background-color: #fff;
+                align-items: center;
+                padding-left: 5px;
+                padding-right: -20px;
+                margin-bottom: 10px;
+                p:nth-child(1) {
+                    color: #1f5fff;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                p:nth-child(2) {
+                    margin-left: 10px;
+                }
+
+                .comment-actions {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                   
+                    position: relative;
+                    left: 80px;
+                    top: 0px;
+                }
+                
+            }
+
+            
+            span:nth-child(2) {
+                position: relative;
+                color: #b9b5b5;
+                top: -30px;
+                left: 5px;
+                
+            }
+            span:nth-child(3) {
+                position: relative;
+                left: -100px;
+                color: #27d88d;
+                font-weight: 600;
+                top: -10px;
+            }
+
+            .seen-reply {
+                position: relative;
+                left: -80px;
+                font-size: 13px;
+                top: -10px;
+                color: #1f5fff;
+            }
+        }
+
+        .child-comment {
+            margin-left: 40px;
+        }
+    }
+}

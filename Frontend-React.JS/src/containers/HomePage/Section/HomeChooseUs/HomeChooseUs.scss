@@ -1,0 +1,101 @@
+.whychoose {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-color: #fff;
+    margin-bottom: 80px;
+    .whychoose-right {
+        
+        margin-top: 100px;
+        display: block;
+        background: url("../../../../assets/why_1.jpg") center center no-repeat;
+        margin-left: -90px;
+        width: 570px;
+        height: 670px;
+        background-size: 683px;
+        border-radius: 23px;
+    }
+
+    .whychoose-left {
+        width: 766px;
+        height: 100%;
+        margin-left: 60px;
+        &.company-left div {
+            margin-left: 40px;
+            
+        }
+        .whychoose-left-item1 {
+            margin-top: 100px;
+            font-size: 20px;
+            color: #04ce78;
+            font-weight: 600;
+        }
+        .whychoose-left-item2 {
+            margin-top: 20px;
+            color: #22264c;
+            font-size: 40px;
+            font-weight: 600;
+            width: 500px;
+            line-height: 3.2rem;
+        }
+        .whychoose-left-item3 {
+            .whychoose-left-item3-item {
+                margin-top: 40px;
+                display: flex;
+                .whychoose-left-item3-item-left {
+                    width: 60px;
+                    height: 100px;
+                    margin-right: 5px;
+                    .whychoose-left-item3-item-left-number {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: #fff;
+                        border: 1px solid #04ce78;
+                        color: #04ce78;
+                        font-weight: 600;
+                        font-size: 16px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .whychoose-left-item3-item-left-bar {
+                        height: 124px;
+                        width: 1px;
+                        border-left: 1px solid #04ce78;
+                        margin-left: 24px;
+                    }
+                }
+                .whychoose-left-item3-item-right {
+                    .whychoose-left-item3-item-right-title {
+                        font-size: 20px;
+                        color: #22264c;
+                        font-weight: 700;
+                        margin-top: 10px;
+                    }
+                    .whychoose-left-item3-item-right-content {
+                        margin-top: 15px;
+                        font-size: 17px;
+                        color: #b3b0b0;
+                        width: 500px;
+                        height: 80px;
+                        border-bottom: 1px solid #ccc;
+                    }
+                }
+
+                &:hover {
+                    .whychoose-left-item3-item-left-number {
+                        
+                        background-color: #04ce78;
+                        border: 1px solid #04ce78;
+                        color: #fff;
+                        transition: background-color 0.7s ease;
+
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}

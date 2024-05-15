@@ -1,0 +1,100 @@
+.section-home-service {
+    width: 100%;
+    height: 970px;
+    background-color: #f5f7fa;
+    .home-service-header {
+        color: #88cf78;
+        margin: 0px 607px;
+        font-size: 20px;
+        display: flex;
+        padding-top: 50px;
+    }
+    .home-service-title {
+        color: #000d44;
+        margin: 30px 358px;
+        font-size: 35px;
+        font-weight: 800;
+    }
+    .home-service-content {
+        
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 100px;
+        justify-content: space-between;
+        
+        .home-service-content-element {
+            width: 270px;
+            height: 300px;
+            background-color: #fff;
+            margin-bottom: 40px;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.2), /* Bóng bên phải */
+                0 8px 10px 0 rgba(0, 0, 0, 0.2); /* Bóng bên dưới */
+            .home-service-content-element-icon {
+                width: 70px;
+                height: 70px;
+                cursor: pointer;
+                border-radius: 50%;
+                margin-top: 25px;
+                margin-left: 100px;
+                background-color: #e6e9ee;
+                .icon1 {
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    // background-size: 45px;
+                }
+                
+
+            }
+            .home-service-content-element-title {
+                font-size: 22px;
+                color: #000d44;
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-weight: 700;
+            }
+            .home-service-content-element-item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top:30px;
+
+                .button-readmore {
+                    border: none;
+                    width: 130px;
+                    height: 45px;
+                    border-radius: 20px;
+                    color: #000d44;
+                    font-weight: 600;
+                    font-size: 16px;
+                    background: linear-gradient(0deg, rgba(214,226,254,1) 49%, rgba(228,236,255,1) 50%);
+                    box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.2), /* Bóng bên phải */
+                                0 2px 2px 0 rgba(0, 0, 0, 0.2); /* Bóng bên dưới */
+                }
+            }
+
+            &:hover {
+                background-color: #22264c;
+                transition: background-color 0.7s ease;
+
+                .home-service-content-element-title {
+                    color: #fff;
+                }
+
+                .home-service-content-element-icon {
+                    background-color: #04ce78;
+                }
+
+                .home-service-content-element-item {
+                    .button-readmore {
+                        background: linear-gradient(150deg, rgba(39,216,141,1) 38%, rgba(228,236,255,1) 64%);
+                    }
+                }
+            }
+        }
+    }
+}

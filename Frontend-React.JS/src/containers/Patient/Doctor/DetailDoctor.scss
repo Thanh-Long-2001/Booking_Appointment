@@ -1,0 +1,112 @@
+.doctor-detail-container{
+
+    .doctor-detail-header {
+        height: 500px;
+        display: flex;
+        margin-top: 100px;
+        .intro-doctor{
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            width: 400px;
+            margin-right: 70px;
+            
+
+            .content-left{
+                
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 200px;
+                background-color: #1f5fff;
+                width: 350px;
+                height: 400px;
+                border-radius: 15px;
+                // margin: 10px 20px;
+                
+            }
+
+            .content-right{
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+                text-align: justify;
+                .up{
+                    font-size: 24px;
+                    font-weight: 600;
+                    padding-top: 16px;
+                    margin-left: 50px;
+                }
+
+                .up-introduce {
+                    margin-top: 20px;
+                    font-size:28px;
+                    font-weight: 600;
+                }
+
+                .down{
+                    padding-top: 10px;
+                    margin-bottom: 50px;
+                    .like-share-plugin{
+                        margin: 10px 0 20px 0;
+                    }
+                }
+            }
+        }
+
+        .schedule-doctor{
+            width: 800px;
+            
+            // padding: 0 20px !important;
+            display: flex;
+            
+            
+            // height: 200px;
+            
+            .content-left{
+                
+                width: 50%;
+                height: 400px;
+                border-right: 1px solid #ddd;
+                background-color: #1f5fff;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                padding-bottom: 10px;
+
+            }
+
+            .content-right{
+                padding-right: 20px;
+                padding-bottom: 10px;
+                width: 50%;
+                height: 400px;
+
+                background-color: #1f5fff;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+    }
+    
+
+    .detail-info-doctor{
+        padding: 16px 270px !important;
+        background: #f9f9f9;
+        border-top: 1px solid #ddd;
+
+        h2,h3{
+            font-size: 16px;
+        }
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+    .comment-doctor{
+        height: 50px;
+        border-top: 1px solid #ddd;
+        padding: 10px 270px;
+    }
+}

@@ -1,0 +1,421 @@
+.home-header-container {
+    height: 82px;
+    width: 100%;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    background: #fff; 
+    z-index: 100;
+    // background: url('../../assets/banner4.png');
+    
+
+    .home-header-content{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        color: #140039;
+        font-size: 14px;
+
+        .left-content{
+            width: 20%;
+            display: flex;
+            align-items: center;
+
+            .header-logo{
+                display: block;
+                background: url('../../../../assets/logoOK.png') center center no-repeat;
+                background-size: cover;
+                height: 100%;
+                width: 180px;
+                cursor: pointer;
+                margin-right: 60px;
+                
+                
+            }
+
+            i{
+                font-size: 30px;
+                color: #f3f0f0;
+                cursor: pointer;
+                margin-left: 50px;
+                margin-right: 10px;
+            }
+        }
+
+        .center-content{
+            width: 48%;
+            display: flex;
+            font-size: 17px;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 50px 0 150px;
+            font-weight: 500;
+
+            .child-content{
+                cursor: pointer;
+                margin-left: 30px;
+                height: 100%;
+                
+                &:hover{
+                    color: #04ce78;
+                }
+
+                div {
+                    margin-top: 30px;
+                }
+
+                &.active{
+                    border-bottom: 3px solid #ff7a18;
+                    
+                }
+            }
+
+            
+        }
+
+        .right-content{
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: bold;
+
+            .support{
+                position: relative;
+                left: -35px;
+                
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                justify-content: center;
+                width: 160px;
+                height: 35px;
+                border-radius: 20px;
+                background: linear-gradient(315deg, #78dfa3 0%, rgba(4,206,120,1) 60%);
+                color: #fff;
+                font-size: 15px;
+                i{
+                    padding: 0 4px;
+                    font-size: 18px;
+                    
+                }
+
+                a{
+                    color: #333 !important;
+                    text-decoration: block;
+                }
+            }
+
+            .bulkhead {
+                height: 30px;
+                border-left: 1px solid #ccc;
+                margin-left: -40px;
+            }
+
+            .login {
+                // position:absolute;
+                display: flex;
+                width: fit-content;
+                padding: 17px 15px;
+                height: 30%;
+                cursor: pointer;
+                border-left: 1px solid #ccc;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                background-color: #32373c;
+                color: #fff;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            
+            .login2 {
+                // position:absolute;
+                display: flex;
+                width: fit-content;
+                height: 30%;
+                cursor: pointer;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+            }
+
+            .user-element {
+                display: flex;
+                align-items: center;
+                width: 45px;
+                height: 45px;
+                // border: 3px solid #000d44;
+                position: relative;
+                right: 0;
+                color: #fff;
+                font-size: 24px;
+                padding: 0 5px;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+
+                .setting {
+                    position: relative;
+                    top: 20px;
+                    right: -22px;
+                    color: #04ce78;
+                    font-size: 17px;
+                }
+            }
+
+            .login2 i {
+                margin-left: 4px;
+
+                
+            }
+
+            .menu-list {
+                position: fixed;
+                top: 0;
+                right: -100%; /* Đẩy menu ra khỏi màn hình bên phải */
+                width: 220px; /* Chiều dài bằng kích thước màn hình */
+                height: 100vh; /* Chiều cao bằng kích thước màn hình */
+                background-color: #32373c; /* Màu nền của menu */
+                transition: right 1s ease; /* Áp dụng hiệu ứng transition cho thuộc tính right trong 1s */
+                z-index: 1; /* Đảm bảo menu hiển thị trên tất cả các phần khác */
+                padding: 20px; /* Padding cho nội dung menu */
+                box-sizing: border-box; /* Đảm bảo padding không tăng kích thước của menu */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Đổ bóng cho menu */
+
+                color: #fff;
+
+                .close-tab {
+                    position: relative;
+                    font-size: 23px;
+                    top: -18px;
+                    left: -15px;
+                    width: 50px;
+                    height: 50px;
+                    color: #fff;
+                    z-index: 100;
+                }
+                .hello-user {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    margin-left: 63px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+                    
+                }
+
+                .name-user {
+                    width: 180px;
+                    height: 80px;
+                    margin-left: 0 auto;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 20px;
+                    border-bottom: 1px solid #ccc;
+                }
+
+                .info-user {
+                    margin-top: 20px;
+                    &:hover {
+                        color: #27d88d;
+                    }
+                }
+
+                .logout {
+                    margin-top: 280px;
+                    font-size: 50px;
+                    font-weight: 650;
+                    margin-left: 63px;
+
+                    &:hover {
+                        color: #27d88d;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
+
+
+
+.home-header-banner{
+    background: url('../../../../assets/bannerOrigin.jpg');
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // padding: 8px;
+    display: flex;
+    flex-direction: column;
+
+    
+    .content-up{
+        height: 70%;
+        
+        display: flex;
+        width: 100%;
+
+        .content-left {
+            margin-left: 50px;
+            margin-top: 30px;
+            width: 39%;
+            height: 100%;
+            background-color: rgba(65, 224, 92, 0.2);
+            justify-content: center;
+            border-radius: 20px;
+            
+            
+            .content-left-child1 {
+                margin-top: 10px;
+                height: 10%;
+                font-size: 20px;
+                color: #FF8C00;
+            }
+
+            @keyframes rotate {
+                0% {
+                    transform: rotateY(0deg);
+                }
+                50% {
+                    transform: rotateY(90deg);
+                }
+                100% {
+                    transform: rotateY(0deg);
+                }
+            }
+
+            .content-left-child2 {
+                margin-top: 60px;
+                height: 30%;
+                font-size: 40px;
+                width: 70%;
+                color: #140039;
+                animation: rotate 5s linear infinite;
+                font-weight: 800;
+            }
+
+            .content-left-child3 {
+                height: 40%;
+                font-size: 20px;
+                width: 60%;
+                color: #788094;
+            }
+
+            .content-left-child4 {
+                height: 10%;
+                width: 200px;
+                background: linear-gradient(180deg, rgba(39,216,141,1) 30%, rgba(228,236,255,1) 89%);
+                box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.2), /* Bóng bên phải */
+                                0 2px 2px 0 rgba(0, 0, 0, 0.2); /* Bóng bên dưới */
+
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                border-radius: 35px;
+                color: #140039;
+                font-weight: 550;
+                margin-left:150px;
+                font-size: 16px;
+            }
+
+            .content-left-child4:hover {
+                cursor: pointer;
+                background: #04ce78;
+                color: #fff;
+            }
+
+
+        }
+
+        .content-left div {
+            margin-left: 80px;
+        }
+
+        .content-right {
+            margin-left: 100px;
+        }
+
+        
+        .title1{
+        text-align: center;
+        font-size: 36px;
+        text-shadow: 1px 1px 1px #333;
+        margin-bottom: 8px;
+        color: rgb(247, 247, 81);
+        font-weight: 800;
+        margin-top: 62px;
+        }
+
+        .title2{
+            text-align: center;
+            font-size: 40px;
+            text-shadow: 1px 1px 1px #333;
+            color: rgb(247, 247, 81);
+            margin-bottom: 24px;
+        }
+
+        
+
+        .search{
+            width: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 60px auto 0;
+            padding: 12px;
+            border-radius: 32px;
+            background: rgba(255, 255, 255, 0.2);
+            
+            color: #fff;
+            i{
+                margin: 0 5px;
+                color: #fff;
+            }
+
+            input{
+                height: 30px;
+                width: 400px;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+                
+            }
+
+            
+        }
+    }
+    
+   
+    
+}
+
+.home-header-banner {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(0, 0, 0, 0.5); /* Màu overlay, bạn có thể thay đổi giá trị rgba để thay đổi màu sắc và độ trong suốt */
+}
+
+/* Đảm bảo rằng nội dung ảnh sẽ hiển thị phía trên màu overlay */
+.home-header-banner img {
+    position: relative;
+    // z-index: 1;
+}
